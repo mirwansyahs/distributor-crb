@@ -26,6 +26,23 @@ class Transaction extends AUTH_Controller {
 
 		$this->backend->views('admin/transaction/list', $data);
 	}
+	
+	public function exportpdf()
+	{
+		$data = array(
+			'active'		=> 'transaction',
+			'headerTitle'	=> 'Daftar Transaction',
+		);
+
+		if ($this->userdata->role == "user"){
+			$data['data'] = $this->M_transaction->select(['username' => $this->userdata->username])->result();
+		}else{
+			$data['data'] = $this->M_transaction->select('')->result();
+
+		}
+
+		$this->load->view('admin/transaction/exportpdf', $data);
+	}
 
 	public function add()
 	{

@@ -1,7 +1,16 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title"><?=@$headerTitle?></h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="card-title"><?=@$headerTitle?></h3>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="<?=base_url()?>admin/transaction/exportpdf" target="_BLANK">
+                        <button class="btn btn-primary">Export PDF</button>
+                    </a>
+                </div>
+            </div>  
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -113,7 +122,7 @@
       
         $('#example1').DataTable( {
              "responsive": true, "lengthChange": false, "autoWidth": false,
-            "buttons": ["pdf", "excel"]
+            "buttons": ["excel"]
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
       
     </script>
