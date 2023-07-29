@@ -127,7 +127,7 @@
                         <thead>
                             <tr align="center" style="background-color: lightblue">
                                 <th></th>
-                                <th colspan="12">Telemarketing : <?=$key->nama_pelanggan?></th>
+                                <th colspan="12">Teleorder : <?=$key->nama_pelanggan?></th>
                                 <th></th>
                             </tr>
                             <tr align="center">
