@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="jenis_obat">Nama Jenis Obat <span class="text-sm text-danger">*</span></label>
+                        <label for="jenis_obat">Nama Jenis Suplemen <span class="text-sm text-danger">*</span></label>
                         <input type="text" id="jenis_obat" class="form-control form-control-sm" name="jenis_obat" required>
                     </div>
                     <div class="form-group text-left" style="float: left">

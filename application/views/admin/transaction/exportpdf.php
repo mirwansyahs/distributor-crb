@@ -16,10 +16,11 @@
                         <img src="<?=base_url()?>assets/img/AdminLTELogo.png" style="width: 100px">
                     </center>
                 </td>
-                <td>
-                    <center><span style="font-size: 2em">Abad Dua Satu Makmur</span></br><small>Komplek PU Progasi Jl. A. Yani Kav 1 No 8 By Pass
-                            Harjamukti-Cirebon</small></center>
-                </td>
+                    <td>
+                        <center><span style="font-size: 2em">Abad Dua Satu Makmur</span></br><small>Komplek PU Progasi
+                                Jl. A. Yani Kav 1 No 8 By Pass
+                                Harjamukti-Cirebon<br/>Telp: 02318805251; Fax: 02318805052</small></center>
+                    </td>
             </tr>
         </table>
 
@@ -28,7 +29,7 @@
                 <tr>
                     <th>No Faktur</th>
                     <th>Pelanggan</th>
-                    <th>Obat</th>
+                    <th>Suplemen</th>
                     <th>Tanggal Order</th>
                     <th>Total</th>
                     <th>Total Harga</th>
@@ -75,6 +76,21 @@
             </tbody>
         </table>
         </center>
+
+        <table border="0" width="100%" style="margin-top: 50px">
+            <tr align="right">
+                <td width="70%"></td>
+                <td align="center">...., <?=date('d M Y')?></td>
+            </tr>
+            <tr>
+                <td width="70%"></td>
+                <td align="center">&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br></td>
+            </tr>
+            <tr>
+                <td width="70%"></td>
+                <td align="center">(......................................)</td>
+            </tr>
+        </table>
 
         <script>
             window.print();

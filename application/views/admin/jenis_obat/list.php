@@ -10,7 +10,7 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Jenis Obat</th>
+                                <th>Jenis Suplemen</th>
                                 <th class="text-center" width="10%">
                                     <a href="<?=base_url()?>admin/jenis_obat/add">
                                         <button class="btn btn-info btn-sm">

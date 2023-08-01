@@ -21,7 +21,7 @@
                             <tr>
                                 <th>No Faktur</th>
                                 <th>Pelanggan</th>
-                                <th>Obat</th>
+                                <th>Suplemen</th>
                                 <th>Tanggal Order</th>
                                 <th>Total</th>
                                 <th>Total Harga</th>

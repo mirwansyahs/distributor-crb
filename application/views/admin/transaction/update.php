@@ -17,7 +17,7 @@
                             </select>
                     </div>
                     <div class="form-group">
-                        <label for="kode_obat">Obat <span class="text-sm text-danger">*</span></label>
+                        <label for="kode_obat">Suplemen <span class="text-sm text-danger">*</span></label>
                         <select name="kode_obat" class="form-control form-control-sm">
                             <?php foreach ($this->db->get_where('obat')->result() as $key){ ?>
                                 <option value="<?=$key->kode_obat?>" <?=$data->kode_obat == $key->kode_obat ? 'selected' : ''?>><?=$key->nama_obat?></option>

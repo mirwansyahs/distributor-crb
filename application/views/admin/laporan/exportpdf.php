@@ -22,21 +22,22 @@
         $totalPOR = 0;
         ?>
         <center>
-        <table border="0" width="100%" style="border-bottom: 1px solid #000">
-            <tr>
-                <td>
-                    <center>
-                        <img src="<?=base_url()?>assets/img/AdminLTELogo.png" style="width: 100px">
-                    </center>
-                </td>
-                <td>
-                    <center><span style="font-size: 2em">Abad Dua Satu Makmur</span></br><small>Komplek PU Progasi Jl. A. Yani Kav 1 No 8 By Pass
-                            Harjamukti-Cirebon</small></center>
-                </td>
-            </tr>
-        </table>
+            <table border="0" width="100%" style="border-bottom: 1px solid #000">
+                <tr>
+                    <td>
+                        <center>
+                            <img src="<?=base_url()?>assets/img/AdminLTELogo.png" style="width: 100px">
+                        </center>
+                    </td>
+                    <td>
+                        <center><span style="font-size: 2em">Abad Dua Satu Makmur</span></br><small>Komplek PU Progasi
+                                Jl. A. Yani Kav 1 No 8 By Pass
+                                Harjamukti-Cirebon<br/>Telp: 02318805251; Fax: 02318805052</small></center>
+                    </td>
+                </tr>
+            </table>
 
-        <?php
+            <?php
                 foreach ($pelangganOrder as $key) { 
                     
                     for($i = 0; $i < 12; $i++){ 
@@ -94,74 +95,89 @@
                         }
                     }
             ?>
-        <table border="1" width="100%" style="margin-top: 50px; border-collapse: collapse">
-            <thead>
-                            <tr align="center" style="background-color: lightblue">
-                                <th></th>
-                                <th colspan="12">Teleorder : <?=$key->nama_pelanggan?></th>
-                                <th></th>
-                            </tr>
-                            <tr align="center">
-                                <th></th>
-                                <th colspan="12">Periode</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <th>Tipe</th>
-                                <?php for($i = 0; $i < 12; $i++){ ?>
-                                <th><?=$arr[$i]?></th>
-                                <?php } ?>
-                                <th>Jml</th>
-                            </tr>
-                            <tr>
-                                <th>GR</th>
-                                <?php 
+            <table border="1" width="100%" style="margin-top: 50px; border-collapse: collapse">
+                <thead>
+                    <tr align="center" style="background-color: lightblue">
+                        <th></th>
+                        <th colspan="12">Teleorder : <?=$key->nama_pelanggan?></th>
+                        <th></th>
+                    </tr>
+                    <tr align="center">
+                        <th></th>
+                        <th colspan="12">Periode</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Tipe</th>
+                        <?php for($i = 0; $i < 12; $i++){ ?>
+                        <th><?=$arr[$i]?></th>
+                        <?php } ?>
+                        <th>Jml</th>
+                    </tr>
+                    <tr>
+                        <th>GR</th>
+                        <?php 
                                 for($i = 0; $i < 12; $i++){ 
                                 ?>
-                                <td><?=($GR[$i] == 0)?'':number_format($GR[$i], 0, ',', '.')?></td>
+                        <td><?=($GR[$i] == 0)?'':number_format($GR[$i], 0, ',', '.')?></td>
 
-                                <?php } ?>
-                                <td><?=number_format($totalGR, 0, ',', '.')?></td>
-                            </tr>
-                            <tr>
-                                <th>POH</th>
-                                <?php 
+                        <?php } ?>
+                        <td><?=number_format($totalGR, 0, ',', '.')?></td>
+                    </tr>
+                    <tr>
+                        <th>POH</th>
+                        <?php 
                                 for($i = 0; $i < 12; $i++){ 
                                 ?>
-                                <td>
-                                    <?=($POH[$i] == 0)?'':number_format($POH[$i], 0, ',', '.')?>
-                                </td>
-                                <?php } ?>
-                                <td><?=number_format($totalPOH, 0, ',', '.')?></td>
-                            </tr>
-                            <tr>
-                                <th>NR</th>
-                                <?php 
+                        <td>
+                            <?=($POH[$i] == 0)?'':number_format($POH[$i], 0, ',', '.')?>
+                        </td>
+                        <?php } ?>
+                        <td><?=number_format($totalPOH, 0, ',', '.')?></td>
+                    </tr>
+                    <tr>
+                        <th>NR</th>
+                        <?php 
                                 for($i = 0; $i < 12; $i++){    
                                 ?>
-                                <td>
-                                    <?=($NR[$i] == 0)?'':number_format($NR[$i], 0, ',', '.')?>
-                                </td>
-                                <?php } ?>
-                                <td><?=number_format($totalNR, 0, ',', '.')?></td>
-                            </tr>
-                            <tr>
-                                <th>POR</th>
-                                <?php 
+                        <td>
+                            <?=($NR[$i] == 0)?'':number_format($NR[$i], 0, ',', '.')?>
+                        </td>
+                        <?php } ?>
+                        <td><?=number_format($totalNR, 0, ',', '.')?></td>
+                    </tr>
+                    <tr>
+                        <th>POR</th>
+                        <?php 
                                 for($i = 0; $i < 12; $i++){  
                                 ?>
-                                <td>
-                                    <?=($POR[$i] == 0)?'':number_format($POR[$i], 0, ',', '.')?>
-                                </td>
-                                <?php } ?>
-                                <td><?=number_format($totalPOR, 0, ',', '.')?></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-        </table>
+                        <td>
+                            <?=($POR[$i] == 0)?'':number_format($POR[$i], 0, ',', '.')?>
+                        </td>
+                        <?php } ?>
+                        <td><?=number_format($totalPOR, 0, ',', '.')?></td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
             <?php } ?>
         </center>
+
+        <table border="0" width="100%" style="margin-top: 50px">
+            <tr align="right">
+                <td width="70%"></td>
+                <td align="center">...., <?=date('d M Y')?></td>
+            </tr>
+            <tr>
+                <td width="70%"></td>
+                <td align="center">&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br>&nbsp;</br></td>
+            </tr>
+            <tr>
+                <td width="70%"></td>
+                <td align="center">(......................................)</td>
+            </tr>
+        </table>
 
         <script>
             window.print();

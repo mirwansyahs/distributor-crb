@@ -34,7 +34,7 @@
             <div class="row">
                     <div class="col-md-4 form-group">
                         <select name="kode_obat" class="form-control">
-                            <option value="">PILIH OBAT</option>
+                            <option value="">PILIH SUPLEMEN</option>
                             <?php foreach ($this->M_obat->select()->result() as $key) { ?>
                                 <option value="<?=$key->kode_obat?>" <?=($key->kode_obat == @$_GET['kode_obat'])?'selected':''?>><?=$key->nama_obat?></option>
                             <?php } ?>
@@ -59,7 +59,7 @@
                 ?>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Silahkan pilih obat dan tahun dahulu.</p>
+                    <p>Silahkan pilih suplemen dan tahun dahulu.</p>
                 </div>
             </div>
                 <?php

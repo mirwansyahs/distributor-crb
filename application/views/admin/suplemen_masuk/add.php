@@ -33,7 +33,7 @@
                         <input type="text" id="kembalian" class="form-control form-control-sm" name="kembalian" required>
                     </div>
                     <div class="form-group">
-                        <label for="nama_obat">Nama Obat <span class="text-sm text-danger">*</span></label>
+                        <label for="nama_obat">Nama Suplemen <span class="text-sm text-danger">*</span></label>
                         <input type="text" id="nama_obat" class="form-control form-control-sm" name="nama_obat" required>
                     </div>
                     <div class="form-group">
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="jenis_obat">Jenis Obat <span class="text-sm text-danger">*</span></label>
+                        <label for="jenis_obat">Jenis Suplemen <span class="text-sm text-danger">*</span></label>
                         <select name="jenis_obat" class="form-control form-control-sm">
                             <?php foreach ($this->db->get_where('jenis_obat')->result() as $key){ ?>
                                 <option value="<?=$key->jenis_obat?>"><?=$key->jenis_obat?></option>

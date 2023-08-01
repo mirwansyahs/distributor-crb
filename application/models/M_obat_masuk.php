@@ -14,7 +14,7 @@ class M_obat_masuk extends CI_Model {
             $this->db->not_like($notlike);
         }
 
-				$this->db->select('*');
+				$this->db->select('*, obat.kode_obat as obat_id');
 				$this->db->from('obat_masuk');
                 $this->db->join('detail_obat_masuk', 'obat_masuk.no_faktur = detail_obat_masuk.no_faktur');
                 $this->db->join('obat', 'detail_obat_masuk.kode_obat = obat.kode_obat');

@@ -10,10 +10,10 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Kode Obat</th>
-                                <th>Nama Obat</th>
+                                <th>Kode Suplemen</th>
+                                <th>Nama Suplemen</th>
                                 <th>Satuan</th>
-                                <th>Jenis Obat</th>
+                                <th>Jenis Suplemen</th>
                                 <th>Harga Beli</th>
                                 <th>Harga Jual</th>
                                 <th>Stok</th>

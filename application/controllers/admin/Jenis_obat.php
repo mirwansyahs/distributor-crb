@@ -13,7 +13,7 @@ class Jenis_obat extends AUTH_Controller {
 		$data = array(
 			'active'		=> 'master',
 			'subactive'		=> 'jenis obat',
-			'headerTitle'	=> 'Daftar Jenis Obat',
+			'headerTitle'	=> 'Daftar Jenis Suplemen',
 			'data'		=> $this->M_jenis_obat->select('')->result(),
 		);
 
@@ -25,7 +25,7 @@ class Jenis_obat extends AUTH_Controller {
 		$data = array(
 			'active'		=> 'master',
 			'subactive'		=> 'jenis obat',
-			'headerTitle'	=> 'Tambah Jenis Obat',
+			'headerTitle'	=> 'Tambah Jenis Suplemen',
 		);
 
 		$this->backend->views('admin/jenis_obat/add', $data);
@@ -49,7 +49,7 @@ class Jenis_obat extends AUTH_Controller {
 		$data = array(
 			'active'		=> 'master',
 			'subactive'		=> 'jenis obat',
-			'headerTitle'	=> 'Ubah Jenis Obat',
+			'headerTitle'	=> 'Ubah Jenis Suplemen',
 			'id'			=> $id,
 			'data'			=> $this->M_jenis_obat->select(['id_jenis_obat' => $id])->row(),
 		);

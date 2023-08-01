@@ -11,10 +11,10 @@
                         <thead>
                             <tr>
                                 <th>No Faktur</th>
-                                <th>Kode Obat</th>
-                                <th>Nama Obat</th>
+                                <th>Kode Suplemen</th>
+                                <th>Nama Suplemen</th>
                                 <th>Satuan</th>
-                                <th>Jenis Obat</th>
+                                <th>Jenis Suplemen</th>
                                 <th>Harga Beli</th>
                                 <th>Harga Jual</th>
                                 <th>Stok</th>
@@ -66,13 +66,13 @@
                                     <?=$key->laba?>
                                 </td>
                                 <td>
-                                    <a href="<?=base_url()?>admin/suplemen_masuk/edit/<?=$key->kode_obat?>">
+                                    <a href="<?=base_url()?>admin/suplemen_masuk/edit/<?=$key->no_faktur?>">
                                         <button class="btn btn-warning text-white btn-sm">
                                             <i class="far fa-edit"></i>
                                         </button>
                                     </a>
 
-                                    <a href="<?=base_url()?>admin/suplemen_masuk/delete/<?=$key->kode_obat?>">
+                                    <a href="<?=base_url()?>admin/suplemen_masuk/delete/<?=$key->no_faktur?>">
                                         <button class="btn btn-danger btn-sm">
                                             <i class="far fa-trash-alt"></i>
                                         </button>

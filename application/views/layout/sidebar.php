@@ -47,7 +47,7 @@
             <li class="nav-item">
               <a href="<?=base_url()?>admin/jenis_obat" class="nav-link <?=(@$subactive == "jenis obat")?'active':''?>">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Jenis Obat</p>
+                <p>Jenis Suplemen</p>
               </a>
             </li>
             <li class="nav-item">
@@ -125,7 +125,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?=base_url()?>admin/laporan" class="nav-link <?=(@$active == "report")?'active':''?>">
+          <a href="<?=base_url()?>admin/laporan" class="nav-link <?=(@$active == "laporan")?'active':''?>">
             <i class="nav-icon fas fa-file-alt"></i>
             <p>
               Laporan

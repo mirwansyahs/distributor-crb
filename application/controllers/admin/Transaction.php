@@ -14,7 +14,7 @@ class Transaction extends AUTH_Controller {
 	{
 		$data = array(
 			'active'		=> 'transaction',
-			'headerTitle'	=> 'Daftar Transaction',
+			'headerTitle'	=> 'Daftar Transaksi',
 		);
 
 		if ($this->userdata->role == "user"){
@@ -31,7 +31,7 @@ class Transaction extends AUTH_Controller {
 	{
 		$data = array(
 			'active'		=> 'transaction',
-			'headerTitle'	=> 'Daftar Transaction',
+			'headerTitle'	=> 'Daftar Transaksi',
 		);
 
 		if ($this->userdata->role == "user"){
@@ -48,7 +48,7 @@ class Transaction extends AUTH_Controller {
 	{
 		$data = array(
 			'active'		=> 'transaction',
-			'headerTitle'	=> 'Tambah Transaction',
+			'headerTitle'	=> 'Tambah Transaksi',
 		);
 
 		$this->backend->views('admin/transaction/add', $data);
@@ -86,7 +86,7 @@ class Transaction extends AUTH_Controller {
 	{
 		$data = array(
 			'active'		=> 'transaction',
-			'headerTitle'	=> 'Ubah Transaction',
+			'headerTitle'	=> 'Ubah Transaksi',
 			'id'			=> $id,
 			'data'			=> $this->M_transaction->select(['no_faktur' => $id])->row(),
 		);
